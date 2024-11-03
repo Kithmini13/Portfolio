@@ -70,14 +70,44 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <!-- <section id="hero" class="d-flex align-items-center">
     <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="ms-auto">Kithmini Ranathunga</h1>
       <h2 class="ms-auto">I'm a Associate Business Intelligence Engineer</h2>
       <h2 class="ms-auto">From Gampaha, Sri Lanka</h2>
       <a href="about.html" class="btn-about ms-auto" >About Me</a>
     </div>
+  </section> -->
+  <!-- End Hero -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+  <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
+    <h1 class="ms-auto">Kithmini Ranathunga</h1>
+    <h2 class="ms-auto">I'm a <span class="typed" data-typed-items="Data Scientist, Data Analyst, Data Engineer, Business Intelligence Engineer"></span></h2>
+    <h2 class="ms-auto">From Gampaha, Sri Lanka</h2>
+    <a href="about.html" class="btn-about ms-auto">About Me</a>
+  </div>
   </section><!-- End Hero -->
+
+  <!-- Typed.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Initialize Typed.js -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the data-typed-items attribute and split it into an array
+    var typedItems = document.querySelector(".typed").getAttribute("data-typed-items").split(", ");
+    
+    // Initialize Typed.js with the array of items
+    new Typed(".typed", {
+      strings: typedItems,
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+  });
+  </script>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
