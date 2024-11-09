@@ -136,7 +136,14 @@
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
 
+            <!-- <form action="https://formspree.io/f/your-form-id" method="POST">
+              <input type="email" name="email" required>
+              <textarea name="message" required></textarea>
+              <button type="submit">Send Message</button>
+            </form> -->
+
           </div>
+        
 
         </div>
 
@@ -145,24 +152,48 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <footer id="footer" class="footer light-background">
+
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Kithmini</span></strong>. All Rights Reserved
+      <div class="copyright text-center ">
+      <p>© <span>Copyright</span><strong class="px-1 sitename">Kithmini Ranathunga.</strong> <span>All Rights Reserved.<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.facebook.com/kaushalya.ranathunga.77" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/_kith_mi_ni_/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/kithmini-ranathunga-36a81520a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="" target="_blank"><i class="bi bi-twitter-x"></i></a>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Powerd by <a href="">Kithmini Ranathunga</a>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+
+  <!-- ======= Footer ======= -->
+  </footer>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Typed.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Initialize Typed.js -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the data-typed-items attribute and split it into an array
+    var typedItems = document.querySelector(".typed").getAttribute("data-typed-items").split(", ");
+    
+    // Initialize Typed.js with the array of items
+    new Typed(".typed", {
+      strings: typedItems,
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+  });
+  </script>
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
